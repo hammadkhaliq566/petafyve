@@ -8,6 +8,7 @@ let useClickOutside = (handler) => {
       if (!domNode.current.contains(event.target)) {
         handler();
       }
+      
     };
 
     document.addEventListener("mousedown", maybeHandler);
